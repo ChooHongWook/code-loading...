@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  color: #4a4a4a;
+}
+
+h1 {
+  background: gray;
+  width: 60%;
+}
+
+p {
+  background: rgba(255,84,104,0.3);
+  width: 80%;
+  height: 200px;
+}
+
+span {
+  background: rgb(102, 102, 34);
+  width: 100px;
+  height: 100px;
+}
+
+
+header, footer {
+  font-size: large;
+  text-align: center;
+  padding: 0.3em 0;
+  background-color: #4a4a4a;
+  color: #f9f9f9;
+}
+nav {
+  background: #eee;
+}
+main {
+  background: #f9f9f9;
+}
+aside {
+  background: #eee;
+}
+#navigation-title {
+  color: red;
+}
+.menu-item {
+  text-decoration: underline;
+}
+.selected {
+  font-weight: bold;
+  color: #009999;
+}
+.box {
+  color: #155724; /* 글자 색상 */
+  background-color: #d4edda; /* 배경 색상 */
+  border-color: #c3e6cb; /* 테두리 색상 */
+}
+
+
+info {
+  background-color: lightyellow;
+
+  /* border (테두리) */
+  /* 1px의 빨간색 실선을 추가합니다. */
+  border: 1px solid red; 
+
+  /* margin (바깥 여백) */
+  /* 각각의 값은 top, right, bottom, left로 시계방향 */
+  margin: 10px 20px 30px 40px; 
+  /* top과 bottom이 10px, left 및 right가 20px  */
+  margin: 10px 20px;
+  /* 위치를 특정 */
+  margin-top: 10px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+  margin-left: 40px;
+
+  /* padding (안쪽 여백) */
+  padding: 10px 20px 30px 40px;
+}
