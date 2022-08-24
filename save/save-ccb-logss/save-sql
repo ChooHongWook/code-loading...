@@ -1,0 +1,14 @@
+log_ccb countSql: SELECT count(ccb.raw_idx) as count FROM client_log_raw_parsing_ccb ccb WHERE ?? = ? AND ?? > (?)
+log_ccb sql: 
+        SELECT
+            ccb.*,
+            (select send_raw
+                from client_log_raw
+                where idx = ccb.raw_idx) as send_raw,
+            (select receive_raw
+                from client_log_raw
+                where idx = ccb.raw_idx) as receive_raw,
+            (select unix_timestamp(date)
+                from client_log_raw
+                where idx = ccb.raw_idx)*1000 as date
+        FROM client_log_raw_parsing_ccb as ccb WHERE ?? = ? AND ?? > (?) ORDER BY ccb.date desc LIMIT 0, 30;
